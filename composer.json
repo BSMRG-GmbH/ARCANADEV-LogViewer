@@ -1,5 +1,5 @@
 {
-    "name": "arcanedev/log-viewer",
+    "name": "bsmrg-gmbh/arcanadev-log-viewer",
     "description": "Provides a Log Viewer for Laravel",
     "keywords": [
         "arcanedev",
@@ -21,10 +21,16 @@
     ],
     "type": "library",
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/BMSRG-GmbH/ARCANADEV-Support"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "ext-json": "*",
-        "arcanedev/support": "^11.0",
+        "bsmrg-gmbh/arcanadev-support": "^12.0",
         "psr/log": "^1.0|^2.0|^3.0"
     },
     "require-dev": {
@@ -52,9 +58,6 @@
         "test:cov": "phpunit --coverage-html build/coverage"
     },
     "extra": {
-        "branch-alias": {
-            "dev-develop": "11.x-dev"
-        },
         "laravel": {
             "providers": [
                 "Arcanedev\\LogViewer\\LogViewerServiceProvider",
